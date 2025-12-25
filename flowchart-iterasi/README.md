@@ -14,7 +14,7 @@
 
         Stop@{ shape: dbl-circ, label: "Stop"}
 
-        Start-->Iteration-->Numb-->|true|CheckValue-->|true|AddValue-->CheckValue
+        Start-->Iteration-->Numb-->CheckValue-->|true|AddValue-->CheckValue
         
 
         CheckValue-->|false|OutputLog-->Stop
@@ -43,10 +43,10 @@
 ```mermaid
     flowchart TB
         Start@{ shape: circ, label: "start"}
-        DeclarationVar@{ shape: lean-r, label: "input: i"}
-        PrintValue@{ shape: lean-r, label: "output: i"}
-        CheckCondition@{ shape: diamond, label: "i < 10"}
-        AddValue@{ shape: rect, label: "i += 1"}
+        DeclarationVar@{ shape: lean-r, label: "input: j"}
+        PrintValue@{ shape: lean-r, label: "output: j"}
+        CheckCondition@{ shape: diamond, label: "j < 10"}
+        AddValue@{ shape: rect, label: "j += 1"}
 
         Stop@{ shape: dbl-circ, label: "Stop"}
 
